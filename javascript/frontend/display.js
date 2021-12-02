@@ -118,13 +118,8 @@ function setup() {
 		new Button(WIDTH / 2, 5 * HEIGHT / 6, WIDTH / 2, HEIGHT / 6, color(135, 191, 140), color(120, 176, 125), 'Enter', function () { return evaluateMainOpList(); }, false)
 	];
 	matrices = [
-		new Matrix([[0, 2, 3, 7], [7, 6, 5, 44], [8, 6, 5, 6], [42, 5, 6, 3], [3, 4, 63, 2]]),
-		new Matrix([
-		[1, 4, 7, 5, 5],
-		[3, 4, 1, 2, 5],
-		[3, 6, 8, 9, 7],
-		[3, 3, 2, 8, 2]
-	]),
+		new Matrix([[0]]),
+		new Matrix([[0]]),
 		new Matrix([[0]]),
 		new Matrix([[0]]),
 		new Matrix([[0]]),
