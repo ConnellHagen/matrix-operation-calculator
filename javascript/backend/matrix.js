@@ -485,14 +485,14 @@ class Matrix {
       tempArray[i] = new Array(this.rows);
     }
     
-    for (let b = 0; b < tempArray.length; b++) {
-      for (let c = 0; c < tempArray[b].length; c++) {
-        if(c==b){
-          tempArray[b][c]=1;
-        } else if(c>b) {
-          tempArray[b][c] = 0;
+    for (let col = 0; col < tempArray.length; col++) {
+      for (let row = 0; row < tempArray.length; row++) {
+        if(col==row){
+          tempArray[row][col]=1;
+        } else if(col>row) {
+          tempArray[row][col] = 0;
         } else {
-          tempArray[b][c] = ops[opsSpot];
+          tempArray[row][col] = ops[opsSpot];
           opsSpot++;
         }
       }
@@ -586,7 +586,6 @@ class Matrix {
         operations[opSpot]=op;
 
         for (let k = 0; k<tempArray[j].length; k++){
-          
           tempArray[j][k]=tempArray[j][k]-(op*tempArray[i][k]);
           tempCol++
         }
